@@ -16,7 +16,7 @@ body {
     flex-direction: column;
     /*Generic project styles*/
     color: #3a3a3a;
-    font-family: 'Lato', sans-serif; /*tried quotation and speech marks - neither work*/
+    font-family: 'Lato', sans-serif;
 }
 
 header {
@@ -37,7 +37,7 @@ header a {
 }
 
 h1 {
-    font-family: 'Oswald', sans-serif; /*tried quotation and speech marks - neither work*/
+    font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #252525;
@@ -50,7 +50,7 @@ h1 {
 }
 
 #menu > li {
-    margin-bottom: 1px;
+    margin-bottom: 1em;
 }
 
 .active {
@@ -68,6 +68,7 @@ nav{
     display: none;
     top: 100%;
 }
+
 /*nav-toggle data*/
 #nav-toggle:checked~nav {
     display: block;
@@ -90,4 +91,34 @@ main {
 
 footer {
     background-color: orange;
+}
+
+/*media query: tablets and larger (768px+)*/
+@media screen and (min-width: 768px) {
+    /*header*/
+    nav{
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu > li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    #logo {
+        font-size: 280%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
 }
