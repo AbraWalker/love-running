@@ -16,7 +16,7 @@ body {
     flex-direction: column;
     /*Generic project styles*/
     color: #3a3a3a;
-    /*font-family: 'Lato', sans-serif; /*tried quotation and speech marks - neither work*/
+    font-family: 'Lato', sans-serif; /*tried quotation and speech marks - neither work*/
 }
 
 header {
@@ -26,6 +26,9 @@ header {
     z-index: 99;
     width: 100%;
     box-shadow: 0 2px 2px #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 header a {
@@ -34,7 +37,7 @@ header a {
 }
 
 h1 {
-    /*font-family: 'Oswald', sans-serif; /*tried quotation and speech marks - neither work*/
+    font-family: 'Oswald', sans-serif; /*tried quotation and speech marks - neither work*/
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #252525;
@@ -62,9 +65,7 @@ nav{
     left: 0;
     padding: 0 1rem;
     box-shadow: 0 2px 2px #3a3a3a;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    display: none;
     top: 100%;
 }
 /*nav-toggle data*/
