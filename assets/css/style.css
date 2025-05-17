@@ -93,7 +93,7 @@ main {
 #hero {
     height: 600px;
     width: 100%;
-    background: url("../images/hero-image.webp") no-repeat center center;
+    background: url('https://codeinstitute.s3.eu-west-1.amazonaws.com/CSSEssentials/love-running-v3/images/webp-optimized/hero-image.webp') no-repeat center center;
     background-size: cover;
     position: relative;
 }
@@ -137,6 +137,24 @@ main {
 #benefits hr {
     border-top: 1px solid #3a3a3a;
     margin: 5px 0;
+}
+
+#circle-cover-bg {
+    background: url('https://codeinstitute.s3.eu-west-1.amazonaws.com/CSSEssentials/love-running-v3/images/webp-optimized/reasons-image.webp') no-repeat top center;
+    background-size: cover;
+    height: 90vw;
+    width: 90vw;
+    margin-bottom: 20px;
+    /*Makes a square image circular*/
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+#benefits-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*Footer*/
