@@ -212,7 +212,6 @@ main {
     
     color: #ffffff;
     background-color: rgba(60, 60, 0, 0.6);
-    position: absolute;
     padding: 30px;
 }
 
@@ -221,7 +220,7 @@ main {
     padding-bottom: 20px;
 }
 
-.radio {
+.radio-buttons {
     width: 100%;
     display: flex;
     justify-content: space-between;
